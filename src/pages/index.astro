@@ -1,13 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
+import Hero from '../components/Hero.astro'
+import Information from '../components/Information.astro'
+import SectionContainer from '../components/SectionContainer.astro'
 ---
 
 <Layout
 	title='Gem and Jewelery'
 	subtitle='Gem and Jewelery'
 >
-	<main></main>
+	<main>
+		<SectionContainer
+			class='py-16 md:py-10'
+			id='hero'
+		>
+			<Hero />
+		</SectionContainer>
+	</main>
+
+	<SectionContainer
+		class='py-16 md:py-10'
+		id='hero'
+	>
+		<Information />
+	</SectionContainer>
 </Layout>
 
 <style>
