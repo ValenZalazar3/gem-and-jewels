@@ -33,7 +33,11 @@ const { title, subtitle } = Astro.props
 	</head>
 	<body>
 		<slot />
-		<Footer />
+		<!-- <Footer /> -->
+		<script
+			is:inline
+			src='https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js'
+		></script>
 	</body>
 </html>
 <style is:global>
@@ -50,7 +54,7 @@ const { title, subtitle } = Astro.props
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: rgb(65, 82, 98);
+		background-color: rgb(46, 44, 44);
 	}
 	code {
 		font-family:
