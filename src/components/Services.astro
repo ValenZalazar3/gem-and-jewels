@@ -1,0 +1,238 @@
+---
+
+---
+
+<div class='py-10'>
+    <div>
+        <h1 class='text-2xl lg:text-4xl text-center text-white my-5'>
+            Our Services
+        </h1>
+        <p class='text-md lg:text-lg text-center text-white my-5'>
+            More than <strong class='text-[#ffd277]'
+                >25 years of experience</strong
+            > in de industry.
+        </p>
+    </div>
+    <div
+        class='flex flex-col md:flex-row justify-center items-center gap-20 max-w-screen-xl mx-auto'
+    >
+        <!-- Item 1 -->
+        <div class='text-white rounded-lg'>
+            <img
+                src='necklace.png'
+                alt='Necklace'
+                class='w-96 rounded-lg'
+            />
+            <h2 class='mt-20 mb-2 text-lg font-semibold text-center titulo'>
+                Appraisal
+            </h2>
+            <button
+                class='Btn mt-2 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+            >
+            </button>
+        </div>
+        <!-- Item 2 -->
+        <div class='text-white rounded-lg'>
+            <img
+                src='diamondRing.png'
+                alt='Rings'
+                class='w-96 rounded-lg'
+            />
+            <h2
+                class='text-lg mt-20 lg:mt-[4.5rem] font-semibold text-center titulodos'
+            >
+                Gems and Jewels
+            </h2>
+            <button
+                class='Btn mt-3 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+            >
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .Btn {
+        width: 140px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(
+            to right,
+            #77530a,
+            #ffd277,
+            #77530a,
+            #77530a,
+            #ffd277,
+            #77530a
+        );
+        background-size: 250%;
+        background-position: left;
+        color: #ffd277;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-duration: 1s;
+        overflow: hidden;
+    }
+
+    .Btn::before {
+        position: absolute;
+        content: 'View Details';
+        color: #ffd277;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 97%;
+        height: 90%;
+        border-radius: 8px;
+        transition-duration: 1s;
+        background-color: rgba(0, 0, 0, 0.842);
+        background-size: 200%;
+    }
+
+    .Btn:hover {
+        background-position: right;
+        transition-duration: 1s;
+    }
+
+    .Btn:hover::before {
+        background-position: right;
+        transition-duration: 1s;
+    }
+
+    .Btn:active {
+        transform: scale(0.95);
+    }
+    @media (max-width: 1150px) {
+        .titulodos {
+            margin-top: 3rem;
+        }
+    }
+    @media (max-width: 1100px) {
+        .titulodos {
+            margin-top: 2rem;
+        }
+    }
+    @media (max-width: 1050px) {
+        .titulodos {
+            margin-top: 1rem;
+        }
+    }
+    @media (max-width: 1000px) {
+        .titulodos {
+            margin-top: 0.5rem;
+        }
+    }
+    @media (max-width: 950px) {
+        .titulodos {
+            margin-top: -9px;
+        }
+    }
+    @media (max-width: 900px) {
+        .grid {
+            display: flex;
+            flex-direction: column; /* Asegura que todos los elementos se coloquen en una sola columna */
+        }
+
+        .grid > div {
+            display: flex;
+            flex-direction: column; /* Asegura que dentro de cada div hijo, los elementos se coloquen en columna */
+            align-items: center; /* Centra los elementos dentro de cada div */
+        }
+
+        .grid > div img {
+            order: -1; /* Coloca la imagen primero */
+        }
+
+        .grid > div h2,
+        .grid > div button {
+            order: 0; /* Coloca el texto y botón después de la imagen */
+        }
+        img {
+            height: 15rem;
+            width: 15rem;
+            border-radius: 1rem;
+            margin: 0px;
+        }
+        .titulo {
+            margin-top: 3rem;
+        }
+        .titulodos {
+            margin-top: 3rem;
+        }
+        button {
+            margin-bottom: 6rem;
+        }
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+
+<!-- <div class='grid grid-cols-1 md:grid-cols-4 max-w-screen-xl mx-auto'>
+   
+    <div class='text-white rounded-lg'>
+        <img
+            src='necklace.png'
+            alt='Necklace'
+            class='w-full'
+        />
+        <h2 class='mt-32 mb-2 text-lg font-semibold text-center titulo'>
+            Diamond's Haven
+        </h2>
+        <button
+            class='Btn mt-2 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+        >
+        </button>
+    </div>
+   
+    <div class='text-white rounded-lg'>
+        <h2
+            class='text-lg mt-20 lg:mt-[4.5rem] font-semibold text-center titulodos'
+        >
+            Best Summer Sale
+        </h2>
+        <button
+            class='Btn mt-3 mb-40 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+        >
+        </button>
+        <img
+            src='earrings.jpg'
+            alt='Rings'
+            class='w-full'
+        />
+    </div>
+   
+    <div class='text-white rounded-lg'>
+        <img
+            src='diamondRing.png'
+            alt='Necklaces'
+            class='w-full'
+        />
+        <h2 class='mt-32 text-lg font-semibold text-center titulo'>
+            Necklaces
+        </h2>
+        <button
+            class='Btn mt-2 bg-[#ffd700] text-black py-2 px-4 rounded block mx-auto'
+        ></button>
+    </div>
+    
+    <div class='text-white rounded-lg'>
+        <h2
+            class='text-lg mt-20 lg:mt-[4.5rem] font-semibold text-center titulodos'
+        >
+            Diamond Chain
+        </h2>
+        <button
+            class='Btn mt-3 mb-40 bg-[#ffd700] text-black py-2 px-4 block mx-auto'
+        ></button>
+        <img
+            src='diamondRing1.png'
+            alt='Ring Diamond'
+            class='w-full'
+        />
+    </div>
+</div> -->
