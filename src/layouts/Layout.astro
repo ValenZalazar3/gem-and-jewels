@@ -29,11 +29,24 @@ const { title, subtitle } = Astro.props
 			name='generator'
 			content={Astro.generator}
 		/>
+		<link
+			rel='preconnect'
+			href='https://fonts.googleapis.com'
+		/>
+		<link
+			rel='preconnect'
+			href='https://fonts.gstatic.com'
+			crossorigin
+		/>
+		<link
+			href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'
+			rel='stylesheet'
+		/>
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
-		<!-- <Footer /> -->
+		<Footer />
 		<script
 			is:inline
 			src='https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js'
@@ -56,15 +69,7 @@ const { title, subtitle } = Astro.props
 		font-family: system-ui, sans-serif;
 		background-color: rgb(46, 44, 44);
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body {
+		font-family: 'Raleway', sans-serif;
 	}
 </style>
