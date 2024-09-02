@@ -2,7 +2,10 @@
 
 ---
 
-<div class='py-10'>
+<div
+    class='py-10'
+    id='services'
+>
     <div>
         <h1 class='text-2xl lg:text-4xl text-center text-white my-5'>
             Our Services
@@ -14,44 +17,79 @@
         </p>
     </div>
     <div
-        class='flex flex-col md:flex-row justify-center items-center gap-20 max-w-screen-xl mx-auto'
+        class='flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 max-w-screen-xl mx-auto'
     >
         <!-- Item 1 -->
         <div class='text-white rounded-lg'>
-            <img
-                src='necklace.png'
-                alt='Necklace'
-                class='w-96 rounded-lg'
-            />
+            <a
+                href='http://https://sofia.jewelershowcase.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                <img
+                    src='necklace.png'
+                    alt='Necklace'
+                    class='w-96 rounded-lg'
+                />
+            </a>
             <h2 class='mt-20 mb-2 text-lg font-semibold text-center titulo'>
                 Appraisal
             </h2>
-            <button
-                class='Btn mt-2 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+
+            <a
+                href='https://wa.me/+19547012375?text=Hello%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20appraisal%20services'
+                target='_blank'
+                rel='noopener noreferrer'
             >
-            </button>
+                <button
+                    class='Btn mt-2 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+                >
+                </button>
+            </a>
         </div>
         <!-- Item 2 -->
         <div class='text-white rounded-lg'>
-            <img
-                src='diamondRing.png'
-                alt='Rings'
-                class='w-96 rounded-lg'
-            />
+            <a
+                href='https://sofia.jewelershowcase.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                <img
+                    src='diamondRing.png'
+                    alt='Rings'
+                    class='w-96 rounded-lg'
+                />
+            </a>
             <h2
                 class='text-lg mt-20 lg:mt-[4.5rem] font-semibold text-center titulodos'
             >
                 Gems and Jewels
             </h2>
-            <button
-                class='Btn mt-3 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+            <a
+                href='https://sofia.jewelershowcase.com/'
+                target='_blank'
+                rel='noopener noreferrer'
             >
-            </button>
+                <button
+                    class='Btn mt-3 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+                >
+                </button>
+            </a>
         </div>
     </div>
 </div>
 
 <style>
+    img {
+        border-radius: 1rem;
+        margin: 0px;
+        transition: transform 0.3s ease; /* Añade la transición para el efecto de hover */
+    }
+
+    img:hover {
+        transform: scale(1.05); /* Hace que la imagen se sobresalte */
+        cursor: pointer; /* Cambia el cursor a pointer */
+    }
     .Btn {
         width: 140px;
         height: 40px;

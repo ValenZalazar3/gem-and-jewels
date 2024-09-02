@@ -1,5 +1,5 @@
 ---
-import WhatsApp from '@/icons/WhatsApp.astro'
+
 ---
 
 <footer class='bg-white rounded-sm shadow dark:bg-gray-900 w-full'>
@@ -16,46 +16,61 @@ import WhatsApp from '@/icons/WhatsApp.astro'
                 />
                 <span
                     class='self-center text-lg md:text-2xl font-semibold whitespace-nowrap dark:text-white'
-                    >American Gem & Jewelery Association</span
                 >
+                    American Gem & Jewelry Association
+                </span>
             </a>
             <ul
                 class='flex flex-wrap items-center my-10 text-sm md:text-lg font-medium text-gray-500 sm:mb-0 dark:text-gray-400'
             >
                 <li>
                     <a
-                        href='#'
-                        class='hover:underline me-10 md:me-16'
-                        >Services</a
+                        href='#services'
+                        class='scroll-link hover:underline me-10 md:me-16'
                     >
+                        Services
+                    </a>
                 </li>
                 <li>
                     <a
-                        href='#'
-                        class='hover:underline me-10 md:me-16'
-                        >About</a
+                        href='#aboutUs'
+                        class='scroll-link hover:underline me-10 md:me-16'
                     >
+                        About
+                    </a>
                 </li>
-
                 <li>
                     <a
-                        href='#'
+                        href='https://wa.me/+19547012375?text=Hello%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20appraisal%20services'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         class='hover:underline'
-                        >Contact</a
                     >
+                        Contact
+                    </a>
                 </li>
             </ul>
         </div>
-        <hr
-            class='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8'
-        />
-        <span
-            class='block text-sm text-gray-500 sm:text-center dark:text-gray-400'
-            >© 2024 <a
-                href='https://flowbite.com/'
-                class='hover:underline'
-                >American Gem & Jewelery Association.</a
-            ></span
-        >
     </div>
+    <hr class='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
+    <span class='block text-sm text-gray-500 sm:text-center dark:text-gray-400'>
+        © 2024 <a
+            href='https://flowbite.com/'
+            class='hover:underline'
+        >
+            American Gem & Jewelry Association.
+        </a>
+    </span>
 </footer>
+
+<script>
+    document.querySelectorAll('.scroll-link').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault()
+            const targetId = this.getAttribute('href')
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth'
+            })
+        })
+    })
+</script>
