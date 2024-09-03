@@ -29,12 +29,12 @@
                 rel='noopener noreferrer'
             >
                 <img
-                    src='necklace.png'
+                    src='appraisals.png'
                     alt='Necklace'
                     class='w-96 rounded-lg'
                 />
             </a>
-            <h2 class='mt-20 mb-2 text-lg font-semibold text-center titulo'>
+            <h2 class='mt-14 mb-2 text-lg font-semibold text-center titulo'>
                 Appraisal
             </h2>
 
@@ -44,7 +44,7 @@
                 rel='noopener noreferrer'
             >
                 <button
-                    class='Btn mt-2 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+                    class='Btn Btn1 mt-4 mb-9 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
                 >
                 </button>
             </a>
@@ -63,9 +63,9 @@
                 />
             </a>
             <h2
-                class='text-lg mt-20 lg:mt-[4.5rem] font-semibold text-center titulodos'
+                class='text-lg mt-16 lg:mt-[3.5rem] font-semibold text-center titulodos'
             >
-                Gems and Jewels
+                Jewelery
             </h2>
             <a
                 href='https://sofia.jewelershowcase.com/'
@@ -73,7 +73,7 @@
                 rel='noopener noreferrer'
             >
                 <button
-                    class='Btn mt-3 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+                    class='Btn Btn2 mt-3 mb-9 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
                 >
                 </button>
             </a>
@@ -120,7 +120,7 @@
 
     .Btn::before {
         position: absolute;
-        content: 'View Details';
+        content: '';
         color: #ffd277;
         display: flex;
         align-items: center;
@@ -131,6 +131,12 @@
         transition-duration: 1s;
         background-color: rgba(0, 0, 0, 0.842);
         background-size: 200%;
+    }
+    .Btn1::before {
+        content: 'WhatsApp';
+    }
+    .Btn2::before {
+        content: 'Catalogue';
     }
 
     .Btn:hover {
