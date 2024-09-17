@@ -13,7 +13,7 @@
     >
       <img
         src='/favicon.png'
-        class='h-14'
+        class='h-8 md:h-14'
         alt='Logo'
       />
       <h1 class='self-center text-xl md:text-4xl whitespace-nowrap text-white'>
@@ -46,7 +46,7 @@
         <img
           src='appraisals.png'
           alt='Necklace'
-          class='w-96 rounded-lg'
+          class='w-96 rounded-lg img1'
         />
       </a>
       <h2 class='mt-14 mb-2 text-lg font-semibold text-center titulo'>
@@ -74,7 +74,7 @@
         <img
           src='diamondRing.png'
           alt='Rings'
-          class='w-96 rounded-lg'
+          class='w-96 rounded-lg img1'
         />
       </a>
       <h2
@@ -97,13 +97,13 @@
 </div>
 
 <style>
-  img {
+  .img1 {
     border-radius: 1rem;
     margin: 0px;
     transition: transform 0.3s ease; /* Añade la transición para el efecto de hover */
   }
 
-  img:hover {
+  .img1:hover {
     transform: scale(1.05); /* Hace que la imagen se sobresalte */
     cursor: pointer; /* Cambia el cursor a pointer */
   }
@@ -212,7 +212,7 @@
     .grid > div button {
       order: 0; /* Coloca el texto y botón después de la imagen */
     }
-    img {
+    .img1 {
       height: 15rem;
       width: 15rem;
       border-radius: 1rem;
