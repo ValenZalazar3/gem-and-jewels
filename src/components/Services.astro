@@ -3,219 +3,234 @@
 ---
 
 <div
-    class='py-10'
-    id='services'
+  class='py-10'
+  id='services'
 >
-    <div>
-        <h1 class='text-2xl lg:text-4xl text-center text-white my-5'>
-            Our Services
-        </h1>
-        <p class='text-md lg:text-lg text-center text-white my-5'>
-            Discover our professional <strong class='text-[#ffd277]'
-                >appraisal service</strong
-            > and exclusive collection of <strong class='text-[#ffd277]'
-                >gems and jewelry.</strong
-            >
-        </p>
-    </div>
-    <div
-        class='flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 max-w-screen-xl mx-auto'
+  <div class='flex justify-center mb-16 mt-10'>
+    <a
+      href='#hero'
+      class='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
     >
-        <!-- Item 1 -->
-        <div class='text-white rounded-lg'>
-            <a
-                href='http://https://sofia.jewelershowcase.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <img
-                    src='appraisals.png'
-                    alt='Necklace'
-                    class='w-96 rounded-lg'
-                />
-            </a>
-            <h2 class='mt-14 mb-2 text-lg font-semibold text-center titulo'>
-                Appraisal
-            </h2>
+      <img
+        src='/favicon.png'
+        class='h-14'
+        alt='Logo'
+      />
+      <h1 class='self-center text-xl md:text-4xl whitespace-nowrap text-white'>
+        American Gem & Jewelry Association
+      </h1>
+    </a>
+  </div>
+  <div>
+    <h1 class='text-2xl lg:text-4xl text-center text-white my-5'>
+      Our Services
+    </h1>
+    <p class='text-md lg:text-lg text-center text-white my-5'>
+      Discover our professional <strong class='text-[#ffd277]'
+        >appraisal service</strong
+      > and exclusive collection of <strong class='text-[#ffd277]'
+        >gems and jewelry.</strong
+      >
+    </p>
+  </div>
+  <div
+    class='flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 max-w-screen-xl mx-auto'
+  >
+    <!-- Item 1 -->
+    <div class='text-white rounded-lg'>
+      <a
+        href='http://https://sofia.jewelershowcase.com/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <img
+          src='appraisals.png'
+          alt='Necklace'
+          class='w-96 rounded-lg'
+        />
+      </a>
+      <h2 class='mt-14 mb-2 text-lg font-semibold text-center titulo'>
+        Appraisal
+      </h2>
 
-            <a
-                href='https://wa.me/+19547012375?text=Hello%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20appraisal%20services'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <button
-                    class='Btn Btn1 mt-4 mb-9 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
-                >
-                </button>
-            </a>
-        </div>
-        <!-- Item 2 -->
-        <div class='text-white rounded-lg'>
-            <a
-                href='https://sofia.jewelershowcase.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <img
-                    src='diamondRing.png'
-                    alt='Rings'
-                    class='w-96 rounded-lg'
-                />
-            </a>
-            <h2
-                class='text-lg mt-16 lg:mt-[3.5rem] font-semibold text-center titulodos'
-            >
-                Jewelery
-            </h2>
-            <a
-                href='https://sofia.jewelershowcase.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <button
-                    class='Btn Btn2 mt-3 mb-9 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
-                >
-                </button>
-            </a>
-        </div>
+      <a
+        href='https://wa.me/+19547012375?text=Hello%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20appraisal%20services'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <button
+          class='Btn Btn1 mt-4 mb-9 bg-[#BEBEBE] text-black py-2 px-4 rounded block mx-auto'
+        >
+        </button>
+      </a>
     </div>
+    <!-- Item 2 -->
+    <div class='text-white rounded-lg'>
+      <a
+        href='https://sofia.jewelershowcase.com/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <img
+          src='diamondRing.png'
+          alt='Rings'
+          class='w-96 rounded-lg'
+        />
+      </a>
+      <h2
+        class='text-lg mt-16 lg:mt-[3.5rem] font-semibold text-center titulodos'
+      >
+        Jewelery
+      </h2>
+      <a
+        href='https://sofia.jewelershowcase.com/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <button
+          class='Btn Btn2 mt-3 mb-9 bg-[#B9B8B5] text-black py-2 px-4 rounded block mx-auto'
+        >
+        </button>
+      </a>
+    </div>
+  </div>
 </div>
 
 <style>
+  img {
+    border-radius: 1rem;
+    margin: 0px;
+    transition: transform 0.3s ease; /* Añade la transición para el efecto de hover */
+  }
+
+  img:hover {
+    transform: scale(1.05); /* Hace que la imagen se sobresalte */
+    cursor: pointer; /* Cambia el cursor a pointer */
+  }
+  .Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(
+      to right,
+      #77530a,
+      #ffd277,
+      #77530a,
+      #77530a,
+      #ffd277,
+      #77530a
+    );
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+
+  .Btn::before {
+    position: absolute;
+    content: '';
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  .Btn1::before {
+    content: 'WhatsApp';
+  }
+  .Btn2::before {
+    content: 'Catalogue';
+  }
+
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+
+  .Btn:active {
+    transform: scale(0.95);
+  }
+  @media (max-width: 1150px) {
+    .titulodos {
+      margin-top: 3rem;
+    }
+  }
+  @media (max-width: 1100px) {
+    .titulodos {
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 1050px) {
+    .titulodos {
+      margin-top: 1rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    .titulodos {
+      margin-top: 0.5rem;
+    }
+  }
+  @media (max-width: 950px) {
+    .titulodos {
+      margin-top: -9px;
+    }
+  }
+  @media (max-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: column; /* Asegura que todos los elementos se coloquen en una sola columna */
+    }
+
+    .grid > div {
+      display: flex;
+      flex-direction: column; /* Asegura que dentro de cada div hijo, los elementos se coloquen en columna */
+      align-items: center; /* Centra los elementos dentro de cada div */
+    }
+
+    .grid > div img {
+      order: -1; /* Coloca la imagen primero */
+    }
+
+    .grid > div h2,
+    .grid > div button {
+      order: 0; /* Coloca el texto y botón después de la imagen */
+    }
     img {
-        border-radius: 1rem;
-        margin: 0px;
-        transition: transform 0.3s ease; /* Añade la transición para el efecto de hover */
+      height: 15rem;
+      width: 15rem;
+      border-radius: 1rem;
+      margin: 0px;
     }
-
-    img:hover {
-        transform: scale(1.05); /* Hace que la imagen se sobresalte */
-        cursor: pointer; /* Cambia el cursor a pointer */
+    .titulo {
+      margin-top: 3rem;
     }
-    .Btn {
-        width: 140px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background: linear-gradient(
-            to right,
-            #77530a,
-            #ffd277,
-            #77530a,
-            #77530a,
-            #ffd277,
-            #77530a
-        );
-        background-size: 250%;
-        background-position: left;
-        color: #ffd277;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition-duration: 1s;
-        overflow: hidden;
+    .titulodos {
+      margin-top: 3rem;
     }
-
-    .Btn::before {
-        position: absolute;
-        content: '';
-        color: #ffd277;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 97%;
-        height: 90%;
-        border-radius: 8px;
-        transition-duration: 1s;
-        background-color: rgba(0, 0, 0, 0.842);
-        background-size: 200%;
+    button {
+      margin-bottom: 6rem;
     }
-    .Btn1::before {
-        content: 'WhatsApp';
+    p {
+      margin-bottom: 3rem;
     }
-    .Btn2::before {
-        content: 'Catalogue';
-    }
-
-    .Btn:hover {
-        background-position: right;
-        transition-duration: 1s;
-    }
-
-    .Btn:hover::before {
-        background-position: right;
-        transition-duration: 1s;
-    }
-
-    .Btn:active {
-        transform: scale(0.95);
-    }
-    @media (max-width: 1150px) {
-        .titulodos {
-            margin-top: 3rem;
-        }
-    }
-    @media (max-width: 1100px) {
-        .titulodos {
-            margin-top: 2rem;
-        }
-    }
-    @media (max-width: 1050px) {
-        .titulodos {
-            margin-top: 1rem;
-        }
-    }
-    @media (max-width: 1000px) {
-        .titulodos {
-            margin-top: 0.5rem;
-        }
-    }
-    @media (max-width: 950px) {
-        .titulodos {
-            margin-top: -9px;
-        }
-    }
-    @media (max-width: 900px) {
-        .grid {
-            display: flex;
-            flex-direction: column; /* Asegura que todos los elementos se coloquen en una sola columna */
-        }
-
-        .grid > div {
-            display: flex;
-            flex-direction: column; /* Asegura que dentro de cada div hijo, los elementos se coloquen en columna */
-            align-items: center; /* Centra los elementos dentro de cada div */
-        }
-
-        .grid > div img {
-            order: -1; /* Coloca la imagen primero */
-        }
-
-        .grid > div h2,
-        .grid > div button {
-            order: 0; /* Coloca el texto y botón después de la imagen */
-        }
-        img {
-            height: 15rem;
-            width: 15rem;
-            border-radius: 1rem;
-            margin: 0px;
-        }
-        .titulo {
-            margin-top: 3rem;
-        }
-        .titulodos {
-            margin-top: 3rem;
-        }
-        button {
-            margin-bottom: 6rem;
-        }
-        p {
-            margin-bottom: 3rem;
-        }
-    }
+  }
 </style>
 
 <!-- <div class='grid grid-cols-1 md:grid-cols-4 max-w-screen-xl mx-auto'>
